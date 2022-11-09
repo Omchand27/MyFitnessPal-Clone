@@ -10,7 +10,6 @@ const Navbar = () =>{
             <h1>LOG IN</h1>
         </div>
     </div>
-
 }
 
 export default Navbar;
