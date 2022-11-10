@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import Title from "./Title";
 
 const SlidePost = () => {
@@ -10,6 +10,7 @@ const SlidePost = () => {
   return (
     <Box mt="9%">
       <Title Titles={Titles} />
+      <Button mt="5%" colorScheme="blue" size="lg">START YOUR JOURNEY TODAY</Button>
     </Box>
   );
 };
