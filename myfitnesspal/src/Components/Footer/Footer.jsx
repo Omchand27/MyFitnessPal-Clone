@@ -1,14 +1,15 @@
-import { Flex, Text, Box, Select } from "@chakra-ui/react";
+import { Flex, Text, Box, Select, Link } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
     <Box
-      h="100px"
+      mt="5%"
+      h="20%"
       space="10px"
       boxShadow="rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;"
     >
       <Flex>
-        <Box display="flex" w="100%" justifyContent="center">
+        <Box display="flex" w="100%" justifyContent="center" m="auto">
           <Box fontWeight="bold" fontSize="lg" mr="2%">
             ABOUT
           </Box>
@@ -30,9 +31,9 @@ const Footer = () => {
           <Box fontWeight="bold" fontSize="lg" mr="2%">
             PREMIUM
           </Box>
-        </Box>
-        <Box>
+
           <Select
+            w="14%"
             variant="outline"
             placeholder="select language"
             color="black"
@@ -45,16 +46,16 @@ const Footer = () => {
           </Select>
         </Box>
       </Flex>
-      <Box display="flex" w="88%" justifyContent="center">
-        <Text color="blue">
-          Calorie Counter Blog Terms Privacy Contact Us API Jobs Feedback
+      <Box display="flex" justifyContent="center" m="auto" mt="1%">
+        <Link>
+          Calorie Counter Blog Terms Privacy ContactUs API Jobs Feedback
           Community Guidelines
-        </Text>
+        </Link>
       </Box>
-      <Box display="flex" w="88%" justifyContent="center">
-        <Text color="blue">Ad Choices Do Not Sell My Personal Information</Text>
+      <Box display="flex" justifyContent="center" m="auto" mt="1%">
+        <Link>Ad Choices Do Not Sell My Personal Information</Link>
       </Box>
-      <Box display="flex" w="88%" justifyContent="center">
+      <Box display="flex" justifyContent="center" m="auto" mt="1%">
         <Text>© 2022 MyFitnessPal, Inc.</Text>
       </Box>
     </Box>
