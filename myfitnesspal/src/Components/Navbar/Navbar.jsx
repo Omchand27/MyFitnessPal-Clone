@@ -1,20 +1,28 @@
-import {
-  Flex,
-  Box,
-  Heading,
-  Button,
-  Spacer,
-} from "@chakra-ui/react";
+import { Flex, Box, Heading, Spacer, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <Flex minWidth="max-content" alignItems="center" gap="2">
-      <Box p="2" ml="9%">
-        <Heading color="blue" w="100%"  size="md" >myfitnesspal</Heading>
-      </Box>
-      <Spacer />
-      <Button colorScheme="teal" mr="9%">LOG IN</Button>
-    </Flex>
+    <Box>
+      <Flex minWidth="max-content" alignItems="center" gap="2">
+        <Box p="2" ml="9%">
+          <Heading
+            color="blue"
+            w="100%"
+            size="md"
+            _hover={{ cursor: "pointer" }}
+          >
+            myfitnesspal
+          </Heading>
+        </Box>
+        <Spacer />
+        <Box mr="9%">
+        <Link to="/Login">
+          <Heading as="h4" size="sm" _hover={{ cursor: "pointer" }} >LOG IN</Heading>
+        </Link>
+        </Box>
+      </Flex>
+    </Box>
   );
 };
 

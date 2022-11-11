@@ -1,4 +1,5 @@
 import { Heading, Box, Text, Image } from "@chakra-ui/react";
+import Login from "../Auth/Login";
 import Headings from "./Headings";
 
 const DisplayInfo2 = () => {
