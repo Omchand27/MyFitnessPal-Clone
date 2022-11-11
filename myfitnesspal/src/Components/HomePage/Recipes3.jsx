@@ -17,7 +17,7 @@ const Recipes3 = ()=>{
         <Title Titles={Titles}/>
         <Box display="flex" w="80%" m="auto" mt="3%">
             {data.map((ele)=>{
-                return <Box key={ele.id} w="27%" m="auto" alignItems="left" borderRadius="10px" h="45vh" boxShadow = "rgba(0, 0, 0, 0.24) 0px 3px 8px" overflow="hidden">
+                return <Box key={ele.id} w="27%" m="auto" alignItems="left" borderRadius="10px" h="45vh" boxShadow = "rgba(0, 0, 0, 0.24) 0px 3px 8px" overflow="hidden" _hover={{cursor:"pointer"}}>
                 <Box>
                   <Image src={ele.img} alt={ele.title} m="auto" />
                 </Box>
