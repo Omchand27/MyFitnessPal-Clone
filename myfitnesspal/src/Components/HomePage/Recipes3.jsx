@@ -1,5 +1,5 @@
 import { Box, Image, Heading, Text } from "@chakra-ui/react"
-import Info3Box from "./Info3Box"
+// import Info3Box from "./Info3Box"
 import Title from "./Title"
 
 
