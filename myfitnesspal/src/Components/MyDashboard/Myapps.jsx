@@ -284,7 +284,7 @@ const Myapps = () => {
               <Image src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_30_2_10_0_90706.png" />
             </Box>
             <Box textAlign="left" mt="7%">
-              <Heading size="lg">Featured Apps</Heading>
+              <Heading size="lg">Featured Apps</Heading> 
               <hr />
               <Grid templateColumns="repeat(3, 1fr)" gap={6} mt="3%">
                 {Featured.map((ele) => {
